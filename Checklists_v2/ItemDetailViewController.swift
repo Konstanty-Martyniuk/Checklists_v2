@@ -16,6 +16,7 @@ protocol ItemDetailViewControllerDelegate: class {
 
 class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     var itemToEdit: ChecklistItem?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
@@ -35,6 +36,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         return nil
     }
+    
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     
     @IBOutlet weak var textField: UITextField!
@@ -56,6 +58,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
         delegate?.itemDetailViewController(self, didFinishAdding: item)
         }
     }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         let oldText = textField.text!
