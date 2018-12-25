@@ -11,6 +11,7 @@ import UIKit
 class ChecklistViewController: UITableViewController, ItemDetailViewControllerDelegate {
     
     var items = [ChecklistItem]()
+    var checklist: Checklist!
     
 // Instead of static init loaded items from file
 //    required init?(coder aDecoder: NSCoder) {
@@ -48,9 +49,11 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        navigationItem.largeTitleDisplayMode = .never
         // load items from file
         loadCheklistItems()
+        title = checklist.name
         
     }
 
@@ -70,7 +73,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         label.text = item.text
     }
     
-    // TableView delegates
+    // MARK: - TableView delegates
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -124,7 +127,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         }
     }
     
-    // ItemDetailViewController delegates
+    //  MARK: - ItemDetailViewController delegates
     
     func itemDetailViewControllerDidCancel(_ controller: ItemDetailViewController) {
         navigationController?.popViewController(animated: true)
@@ -152,6 +155,8 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         navigationController?.popViewController(animated:true)
         saveChecklistItems()
     }
+    
+    //  MARK: - Save/load
     
     // get save file path
     

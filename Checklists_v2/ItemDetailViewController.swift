@@ -19,6 +19,8 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //title size
         navigationItem.largeTitleDisplayMode = .never
         
         if let item = itemToEdit {
