@@ -10,6 +10,15 @@ import Foundation
 class DataModel {
     var lists = [Checklist]()
     
+    var indexOfSelectedChecklist: Int {
+        get {
+            return UserDefaults.standard.integer(forKey: "ChecklistIndex")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "ChecklistIndex")
+            UserDefaults.standard.synchronize()
+        }
+    }
     //  MARK: - Save/load
     
     // get save file path
@@ -51,7 +60,13 @@ class DataModel {
         }
     }
     
+    func registerDefaults() {
+        let dictionary = ["ChecklistIndex": -1]
+        UserDefaults.standard.register(defaults: dictionary)
+    }
+    
     init() {
         loadChecklists()
+        registerDefaults()
     }
 }
