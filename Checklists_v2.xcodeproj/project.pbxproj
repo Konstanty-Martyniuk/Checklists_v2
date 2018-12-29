@@ -66,20 +66,44 @@
 		8406994221B6B263006C2AC4 /* Checklists_v2 */ = {
 			isa = PBXGroup;
 			children = (
-				8406994321B6B263006C2AC4 /* AppDelegate.swift */,
-				8406994521B6B263006C2AC4 /* ChecklistViewController.swift */,
-				8406994721B6B263006C2AC4 /* Main.storyboard */,
-				8406995521B948F5006C2AC4 /* ChecklistItem.swift */,
-				8406995721BADE4C006C2AC4 /* ItemDetailViewController.swift */,
-				8406994A21B6B266006C2AC4 /* Assets.xcassets */,
-				8406994C21B6B266006C2AC4 /* LaunchScreen.storyboard */,
 				8406994F21B6B266006C2AC4 /* Info.plist */,
-				84ADD67921CD8DFC00574F04 /* AllListsViewController.swift */,
-				84ADD67B21CE65D600574F04 /* Checklist.swift */,
-				84ADD67D21D2CA6200574F04 /* ListDetailViewController.swift */,
-				84ADD67F21D69D0A00574F04 /* DataModel.swift */,
+				8406994321B6B263006C2AC4 /* AppDelegate.swift */,
+				84ADD68121D7D9A500574F04 /* Data Models */,
+				84ADD68321D7D9DD00574F04 /* Resources */,
+				84ADD68221D7D9B900574F04 /* View Controllers */,
 			);
 			path = Checklists_v2;
+			sourceTree = "<group>";
+		};
+		84ADD68121D7D9A500574F04 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD67B21CE65D600574F04 /* Checklist.swift */,
+				8406995521B948F5006C2AC4 /* ChecklistItem.swift */,
+				84ADD67F21D69D0A00574F04 /* DataModel.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		84ADD68221D7D9B900574F04 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8406995721BADE4C006C2AC4 /* ItemDetailViewController.swift */,
+				8406994521B6B263006C2AC4 /* ChecklistViewController.swift */,
+				84ADD67D21D2CA6200574F04 /* ListDetailViewController.swift */,
+				84ADD67921CD8DFC00574F04 /* AllListsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		84ADD68321D7D9DD00574F04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8406994A21B6B266006C2AC4 /* Assets.xcassets */,
+				8406994C21B6B266006C2AC4 /* LaunchScreen.storyboard */,
+				8406994721B6B263006C2AC4 /* Main.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
