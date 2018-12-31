@@ -66,9 +66,9 @@
 		8406994221B6B263006C2AC4 /* Checklists_v2 */ = {
 			isa = PBXGroup;
 			children = (
-				8406994F21B6B266006C2AC4 /* Info.plist */,
 				8406994321B6B263006C2AC4 /* AppDelegate.swift */,
 				84ADD68121D7D9A500574F04 /* Data Models */,
+				8406994F21B6B266006C2AC4 /* Info.plist */,
 				84ADD68321D7D9DD00574F04 /* Resources */,
 				84ADD68221D7D9B900574F04 /* View Controllers */,
 			);
@@ -88,10 +88,10 @@
 		84ADD68221D7D9B900574F04 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8406995721BADE4C006C2AC4 /* ItemDetailViewController.swift */,
-				8406994521B6B263006C2AC4 /* ChecklistViewController.swift */,
-				84ADD67D21D2CA6200574F04 /* ListDetailViewController.swift */,
 				84ADD67921CD8DFC00574F04 /* AllListsViewController.swift */,
+				8406994521B6B263006C2AC4 /* ChecklistViewController.swift */,
+				8406995721BADE4C006C2AC4 /* ItemDetailViewController.swift */,
+				84ADD67D21D2CA6200574F04 /* ListDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
